@@ -9,32 +9,60 @@ header {
 
 nav#nav-menu {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-
 }
 
 .nav-logo a {
     text-decoration: none;
     color: white;
+    margin-left: 16px;
 }
 
-div#nav-items {
-
+#logo-icon {
+    font-size: 32px;
 }
 
 ul.menu-list {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 li.menu-list-item {
     list-style: none;
+    margin-right: 16px;
 }
 
-.menu-list-item a {
-    color: white;
+.menu-list-item a{
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.menu-list-item button {
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-github {
+    width: 100%;
+}
+
+.search-github label {
+    width: 100%;
+
+    background-color: hsla(0,0%,100%,.125);
+}
+
+.search-github label input {
+    width: 100%;
+
+    background: none;
+    border: 0;
 }
