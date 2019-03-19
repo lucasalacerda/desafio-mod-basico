@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #24292e;
+}
+
+nav#nav-menu {
+    display: flex;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+div#nav-items {
+
+}
+
+ul.menu-list {
+    display: flex;
+}
+
+li.menu-list-item {
+    list-style: none;
+}
+
+.menu-list-item a {
+    color: white;
+}
