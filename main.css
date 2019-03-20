@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     font-size: 14px;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -21,6 +22,11 @@ a {
 h2 {
     font-weight: 100;
     font-size: 16px;
+    margin-bottom: 2;
+}
+
+button, input {
+    outline: none;
 }
 
 /*------------------------------*\
@@ -31,17 +37,25 @@ header {
     background-color: #24292e;
 }
 
-nav#nav-menu {
+.header-main {
     display: flex;
     justify-content: space-between;
+    
 }
 
-.nav-logo {
+.header-menu-mobile {
+    /* display: flex; */
+}
+
+.header-icons {}
+
+.header-logo {
     display: flex;
+    padding-top: 10px;
     align-items: center;
 }
 
-.nav-logo a {
+.header-logo a {
     text-decoration: none;
     color: white;
     margin-left: 16px;
@@ -53,7 +67,6 @@ nav#nav-menu {
 
 ul.menu-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -78,23 +91,24 @@ li.menu-list-item {
     font-size: 18px;
 }
 
+
 /*------------------------------*\
     Header menu mobile
 \*------------------------------*/
 
-.header-menu {
+.nav-menu-mobile {
+}
+
+nav.nav-menu-header-mobile {
+    margin-top: 5px;
+    border-top: #444d56 1px solid;
+    padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
 }
 
-nav#nav-menu-header {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .search-github {
     background-color: hsla(0, 0%, 100%, .125);
-    width: 100%;
     border-radius: 3px;
     padding: 3px 3px 3px 3px;
 }
@@ -103,7 +117,8 @@ nav#nav-menu-header {
     width: 100%;
     background: none;
     border: 0;
-    padding: 3px 3px 3px 0px;
+    font-size: 16px;
+
 }
 
 .menu-list-mobile {
@@ -152,6 +167,7 @@ section.my-repositories {
 
 .search-repositories-mobile input {
     border: none;
+    font-size: 14px;
 }
 
 .list-repositories-mobile {
@@ -172,4 +188,82 @@ section.my-repositories {
     font-size: 12px;
     color: gray;
 
+}
+
+/*------------------------------*\
+    Media Queries Tablet
+\*------------------------------*/
+
+@media only screen and (min-width: 640px) {
+
+    .header-menu-mobile {
+        display: flex;
+        width: 100%;
+
+    }
+    .header-main{
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-logo {
+        margin-right: 15px;
+    }
+
+    .header-icons {
+        display: none;
+        float: right;
+    }
+    .header-logo {
+        padding: 0px;
+    }
+
+    .search-github {
+        margin-right: 30px;
+        width: 40%;
+    }
+
+    .nav-menu-mobile {
+        display: flex; 
+        align-content: center; 
+        width: 100%;
+    }
+    
+    .nav-menu-header-mobile {
+        display: flex;  
+        align-items: center;
+        border-top: 0!important;
+        margin: 0!important;
+        padding: 0!important;
+    }
+
+    .menu-list-nav {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .menu-list-item button {
+        display: none;
+    }
+
+    .list-item-nav {
+        border-top: 0!important;
+        margin-right: 15px;
+        padding: 0;
+    }
+
+    .list-item-nav:last-child {
+        display: none;
+    }
+
+
+}
+
+/*------------------------------*\
+    Media Queries Desktop
+\*------------------------------*/
+
+@media only screen and (min-width: 640px) {
+ 
 }
