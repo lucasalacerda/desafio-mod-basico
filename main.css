@@ -1,7 +1,31 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
 }
+
+a {
+    text-decoration: none;
+}
+
+.link-gray-mobile {
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.link-white-mobile {
+    color: white;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/*------------------------------*\
+    Header
+\*------------------------------*/
 
 header {
     background-color: #24292e;
@@ -33,36 +57,119 @@ ul.menu-list {
     align-items: center;
 }
 
-li.menu-list-item {
-    list-style: none;
+ul.menu-list li {
     margin-right: 16px;
 }
 
-.menu-list-item a{
-    color: hsla(0,0%,100%,.7);
-    text-decoration: none;
+li.menu-list-item {
+    list-style: none;
+}
+
+.menu-list-item-icon {
     font-size: 18px;
 
 }
+
 .menu-list-item button {
-    color: hsla(0,0%,100%,.7);
-    text-decoration: none;
+    color: hsla(0, 0%, 100%, .7);
+    background-color: transparent;
+    border: 0;
+    padding: 0;
     font-size: 18px;
+}
+
+/*------------------------------*\
+    Header menu mobile
+\*------------------------------*/
+
+.header-menu {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+nav#nav-menu-header {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .search-github {
+    background-color: hsla(0, 0%, 100%, .125);
     width: 100%;
-}
-
-.search-github label {
-    width: 100%;
-
-    background-color: hsla(0,0%,100%,.125);
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
 }
 
 .search-github label input {
     width: 100%;
-
     background: none;
     border: 0;
+    padding: 3px 3px 3px 0px;
+}
+
+.menu-list-mobile {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+}
+
+nav>ul.menu-list-mobile li {
+    border-top: .2px solid #444d56;
+}
+
+.list-item-mobile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-item-mobile a {
+    width: 100%;
+    font-weight: 600;
+}
+
+/*------------------------------*\
+    Section repositories
+\*------------------------------*/
+
+section.my-repositories {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+}
+
+.repositories-mobile {
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.search-repositories-mobile {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px 8px 10px 8px;
+    border: 1px solid #d1d5da;
+}
+
+.search-repositories-mobile input {
+    border: none;
+}
+
+.list-repositories-mobile {
+    padding-left: 10px;
+    margin: 0;
+}
+
+.list-repositories-mobile li a {
+    color: blue;
+}
+
+#show-more {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#show-more a {
+    font-size: 12px;
+    color: gray;
+
 }

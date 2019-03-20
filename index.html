@@ -7,10 +7,8 @@
     <title>Github - Copy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-
-
-
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </head>
 
@@ -22,23 +20,26 @@
             </div>
             <div id="nav-items">
                 <ul class="menu-list">
-                    <li class="menu-list-item"><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li class="menu-list-item"><a class="menu-list-item-icon link-gray-mobile" href=""><i class="fas fa-bell"></i></a></li>
                     <li class="menu-list-item"><button><i class="fas fa-bars"></i></button></li>
                 </ul>
             </div>
         </nav>
         <div class="header-menu">
-            <nav>
+            <nav id="nav-menu-header">
                 <div class="search-github">
-                    <label for="">
-                        <input type="text" placeholder="Search or jump to...">
+                    <label for="search-github">
+                        <input type="text" name="search-github" placeholder="Search or jump to...">
                     </label>
                 </div>
-                <ul>
-                    <li>Pull requests</li>
-                    <li>Issues</li>
-                    <li>Marketplace</li>
-                    <li>Explore</li>
+                <ul class="menu-list-mobile">
+                    <li class="menu-list-item list-item-mobile"><a class="link-white-mobile" href="">Pull requests</a></li>
+                    <li class="menu-list-item list-item-mobile"><a class="link-white-mobile" href="">Issues</a></li>
+                    <li class="menu-list-item list-item-mobile"><a class="link-white-mobile" href="">Marketplace</a></li>
+                    <li class="menu-list-item list-item-mobile"><a class="link-white-mobile" href="">Explore</a></li>
+                    <li class="menu-list-item list-item-mobile"><a class="link-white-mobile" href="">username</a></li>
+                    <li class="menu-list-item list-item-mobile"><a class="link-white-mobile" href=""><i class="fas fa-sign-out-alt"></i>
+                            Sign out</a></li>
                 </ul>
                 <div>
 
@@ -47,15 +48,29 @@
         </div>
     </header>
     <main>
-
-        <div class="my-repositories">
-            <ul>
-                <li>repositorio 1</li>
-                <li>repositorio 2</li>
-                <li>repositorio 3</li>
-
-            </ul>
-        </div>
+        <section class="my-repositories">
+            <h2 class="title-section">Repositories</h2>
+            <div class="repositories-mobile">
+                <div class="search-repositories-mobile">
+                    <label for="search-github">
+                        <input type="text" name="search-github" placeholder="Find a repository...">
+                    </label>
+                </div>
+                <ul class="menu-list-mobile list-repositories-mobile">
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 1</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 2</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 3</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 4</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 5</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 6</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 7</a></li>
+                    <li class="menu-list-item list-item-mobile"><a href=""><i class="fas fa-book"></i> repository 8</a></li>
+                </ul>
+                <div id="show-more">
+                    <a href="">Show more</a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
